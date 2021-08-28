@@ -7,4 +7,8 @@ pub enum EscrowError {
     InvalidInstruction,
     #[error("No rent exemption")]
     NotRentExempt,
+    #[error("Expected amount mismatch")]
+    ExpectedAmountMismatch,
+    #[error("amount overflow")]
+    AmountOverflow,
 }
